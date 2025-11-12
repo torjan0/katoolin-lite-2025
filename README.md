@@ -1,6 +1,5 @@
 # katoolin-lite
 
-> Crafted with pride by **torjan0**, the original creator.
 
 A lightweight, safe-to-use reimplementation of the classic Katoolin workflow. The CLI allows you to list
 Kali-inspired tool categories, enable the Kali rolling repository, and install or upgrade curated tools on
