@@ -77,6 +77,31 @@ CATALOG: Dict[str, Category] = {
                 packages=["dnsrecon"],
                 description="DNS reconnaissance utility with brute forcing",
             ),
+            Tool(
+                name="arp-scan",
+                packages=["arp-scan"],
+                description="ARP discovery for local network reconnaissance",
+            ),
+            Tool(
+                name="nbtscan",
+                packages=["nbtscan"],
+                description="NetBIOS name network scanner",
+            ),
+            Tool(
+                name="ike-scan",
+                packages=["ike-scan"],
+                description="Discover and fingerprint IKE VPN services",
+            ),
+            Tool(
+                name="legion",
+                packages=["legion"],
+                description="GUI-driven network enumeration platform",
+            ),
+            Tool(
+                name="rustscan",
+                packages=["rustscan"],
+                description="Lightning-fast TCP port scanner",
+            ),
         ],
     ),
     "web": Category(
@@ -125,6 +150,27 @@ CATALOG: Dict[str, Category] = {
                 packages=["whatweb"],
                 description="Next generation web scanner and fingerprinting",
             ),
+            Tool(
+                name="wpscan",
+                packages=["wpscan"],
+                description="WordPress vulnerability scanner",
+                auto_updates=False,
+            ),
+            Tool(
+                name="skipfish",
+                packages=["skipfish"],
+                description="High-performance web application security scanner",
+            ),
+            Tool(
+                name="joomscan",
+                packages=["joomscan"],
+                description="Joomla vulnerability scanner",
+            ),
+            Tool(
+                name="xsser",
+                packages=["xsser"],
+                description="Automated XSS attack framework",
+            ),
         ],
     ),
     "exploitation": Category(
@@ -147,6 +193,27 @@ CATALOG: Dict[str, Category] = {
                 description="Local exploit database copies",
                 auto_updates=False,
             ),
+            Tool(
+                name="crackmapexec",
+                packages=["crackmapexec"],
+                description="Swiss army knife for pentesting networks",
+            ),
+            Tool(
+                name="impacket-scripts",
+                packages=["impacket-scripts"],
+                description="Collection of Python tools for network exploitation",
+            ),
+            Tool(
+                name="set",
+                packages=["set"],
+                description="Social-Engineer Toolkit for targeted attacks",
+                auto_updates=False,
+            ),
+            Tool(
+                name="evil-winrm",
+                packages=["evil-winrm"],
+                description="PowerShell remoting shell for Windows targets",
+            ),
         ],
     ),
     "post": Category(
@@ -163,6 +230,23 @@ CATALOG: Dict[str, Category] = {
                 name="responder",
                 packages=["responder"],
                 description="LLMNR, NBT-NS and MDNS poisoning tool",
+            ),
+            Tool(
+                name="bloodhound",
+                packages=["bloodhound"],
+                description="Active Directory attack path visualiser",
+                auto_updates=False,
+            ),
+            Tool(
+                name="powershell-empire",
+                packages=["powershell-empire"],
+                description="Post-exploitation framework for PowerShell agents",
+                auto_updates=False,
+            ),
+            Tool(
+                name="winexe",
+                packages=["winexe"],
+                description="Remote command execution for Windows hosts",
             ),
         ],
     ),
@@ -205,6 +289,21 @@ CATALOG: Dict[str, Category] = {
                 packages=["mdk4"],
                 description="Wi-Fi network stress testing tool",
             ),
+            Tool(
+                name="pixiewps",
+                packages=["pixiewps"],
+                description="Offline WPS PIN recovery tool",
+            ),
+            Tool(
+                name="cowpatty",
+                packages=["cowpatty"],
+                description="WPA-PSK dictionary attack utility",
+            ),
+            Tool(
+                name="asleap",
+                packages=["asleap"],
+                description="CISCO LEAP password cracking tool",
+            ),
         ],
     ),
     "passwords": Category(
@@ -235,6 +334,26 @@ CATALOG: Dict[str, Category] = {
                 name="crunch",
                 packages=["crunch"],
                 description="Flexible wordlist generation utility",
+            ),
+            Tool(
+                name="medusa",
+                packages=["medusa"],
+                description="High-performance parallel login brute forcer",
+            ),
+            Tool(
+                name="patator",
+                packages=["patator"],
+                description="Modular brute-force utility supporting many protocols",
+            ),
+            Tool(
+                name="hashid",
+                packages=["hashid"],
+                description="Identify the type of hashed password strings",
+            ),
+            Tool(
+                name="pack",
+                packages=["pack"],
+                description="Password Analysis and Cracking Kit utilities",
             ),
         ],
     ),
@@ -267,6 +386,58 @@ CATALOG: Dict[str, Category] = {
                 name="bulk-extractor",
                 packages=["bulk-extractor"],
                 description="Scans disk images, files, and directories for features",
+            ),
+            Tool(
+                name="volatility",
+                packages=["volatility"],
+                description="Advanced memory forensics framework",
+            ),
+            Tool(
+                name="plaso",
+                packages=["plaso"],
+                description="Log2Timeline plaso incident response toolkit",
+            ),
+            Tool(
+                name="guymager",
+                packages=["guymager"],
+                description="Forensic disk imaging solution",
+            ),
+            Tool(
+                name="xmount",
+                packages=["xmount"],
+                description="Convert on-disk images to virtual disk formats",
+            ),
+        ],
+    ),
+    "reverse": Category(
+        name="Reverse Engineering",
+        description="Binary and mobile application reverse engineering suites.",
+        tools=[
+            Tool(
+                name="ghidra",
+                packages=["ghidra"],
+                description="NSA's open-source reverse engineering toolkit",
+                auto_updates=False,
+            ),
+            Tool(
+                name="radare2",
+                packages=["radare2"],
+                description="Advanced command-line reverse engineering framework",
+            ),
+            Tool(
+                name="cutter",
+                packages=["cutter"],
+                description="Graphical interface for radare2",
+            ),
+            Tool(
+                name="jadx",
+                packages=["jadx"],
+                description="Android Dex to Java decompiler",
+            ),
+            Tool(
+                name="apktool",
+                packages=["apktool"],
+                description="Reverse engineer Android APK files",
             ),
         ],
     ),

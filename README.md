@@ -1,5 +1,7 @@
 # katoolin-lite
 
+> Crafted with pride by **torjan0**, the original creator.
+
 A lightweight, safe-to-use reimplementation of the classic Katoolin workflow. The CLI allows you to list
 Kali-inspired tool categories, enable the Kali rolling repository, and install or upgrade curated tools on
 Ubuntu-based systems with minimal hassle.
@@ -35,6 +37,8 @@ disciplines. Categories currently include:
 - Wireless
 - Password Attacks
 - Forensics
+- Reverse Engineering
 
 Run `katoolin-lite list --json` for the authoritative list of tools and metadata, including which
-entries require manual upgrades.
+entries require manual upgrades. The human-friendly renderer adds colourful banners, emoji status
+indicators, category summaries, and other flair when executed in a capable terminal.
